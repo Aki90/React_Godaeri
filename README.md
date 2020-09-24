@@ -1,6 +1,6 @@
 ## 창천동 혼술 맛집, '고대리꼬치' 
 
-homepage : 
+homepage : https://godaeri.vercel.app/
 
 ### Client 
 사용기술:

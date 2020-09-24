@@ -14,7 +14,7 @@ const info = () => {
       const mapKey = '479617c5d20a5ea8f0fe8ee20514f575';
       /* global kakao */
       script.onload = () => kakao.maps.load(initMap);
-      script.src = `http://dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=${mapKey}`;
+      script.src = `//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=${mapKey}`;
       document.head.appendChild(script);
     }
   }, []);
