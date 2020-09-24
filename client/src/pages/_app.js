@@ -36,6 +36,13 @@ const MyApp = ({ Component }) => {
     <>
       <Head>
         <meta charSet="utf-8" />
+        <meta
+          name="viewport"
+          content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+        />
+        <meta name="author" content="sehunJeong" />
+        <meta name="description" content="창천동 혼술맛집, 고대리꼬치" />
+        <meta name="keywords" content="창천동, 혼술맛집, 고대리꼬치" />
         <title>고대리꼬치</title>
       </Head>
       <Component />
