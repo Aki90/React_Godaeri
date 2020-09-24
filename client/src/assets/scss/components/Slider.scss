@@ -1,0 +1,59 @@
+@import '@/assets/scss/abstracts/variables';
+
+.slick-slider {
+  .menu {
+    &:focus {
+      outline: none;
+    }
+    height: 300px;
+    background-color: #ffe9e9;
+    position: relative;
+
+    .menu-image {
+      position: absolute;
+      left: 20%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 200px;
+    }
+
+    .menu-text {
+      position: absolute;
+      right: 20%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.5rem;
+    }
+
+    
+  }
+}
+
+// 미디어쿼리
+@media screen and (max-width: 960px) {
+  .slick-slider {
+    .menu {
+      height: 200px;
+  
+      .menu-image {
+        width: 130px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  .slick-slider {
+    .menu {
+      height: 150px;
+  
+      .menu-image {
+        left: 5%;
+        width: 95px;
+      }
+
+      .menu-text {
+        font-size: 1rem;
+      }
+    }
+  }
+}

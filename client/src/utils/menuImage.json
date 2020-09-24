@@ -1,0 +1,37 @@
+[
+  {
+    "id": 0,
+    "url": "/images/menu/01.jpeg",
+    "alt": "과장님set"
+  },
+  {
+    "id": 1,
+    "url": "/images/menu/02.jpeg",
+    "alt": "꼬끼오set"
+  },
+  {
+    "id": 2,
+    "url": "/images/menu/03.jpeg",
+    "alt": "꿀꿀set"
+  },
+  {
+    "id": 3,
+    "url": "/images/menu/04.jpeg",
+    "alt": "동물농장set"
+  },
+  {
+    "id": 4,
+    "url": "/images/menu/05.jpeg",
+    "alt": "개운한오뎅탕"
+  },
+  {
+    "id": 5,
+    "url": "/images/menu/06.jpeg",
+    "alt": "샹그리아"
+  },
+  {
+    "id": 6,
+    "url": "/images/menu/07.jpeg",
+    "alt": "준마이사케시리즈"
+  }
+]

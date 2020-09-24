@@ -1,0 +1,140 @@
+.header {
+  #mobile-nav {
+    display: none;
+  } // 모바일 메뉴
+
+  height: 70px;
+
+  h1 {
+    width: 0;
+
+    .logo {
+      width: 70px;
+      float: left;
+    }
+  } //h1
+
+  .nav {
+    float: right;
+    padding-top: 33px;
+    width: 85%;
+    font-size: 1rem;
+
+    .nav-left {
+      float: left;
+
+      li {
+        float: left;
+        margin-right: 10px;
+      }
+    }
+
+    .nav-right {
+      float: right;
+
+      li {
+        float: left;
+        margin-left: 10px;
+      }
+    }
+  } //nav
+} //.header
+
+// 미디어쿼리
+@media screen and (max-width: 960px) {
+  .header {
+    .logo {
+      margin-left: 5px;
+    }
+
+    .nav .nav-right {
+      margin-right: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .header {
+    .nav {
+      display: none;
+    }
+    #mobile-nav {
+      display: block;
+      position: relative;
+
+      /* 모바일 메뉴 */
+      .ham {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        
+        width: 50px;
+        height: 50px;
+        background: rgba(0, 0, 0, 0);
+        padding: 0 10px;
+        outline: none;
+
+        span {
+          position: relative;
+          display: block;
+          width: 25px;
+          height: 4px;
+          background: #222;
+          transition: all 0.1s;
+
+          &:before {
+            content: '';
+            width: 25px;
+            height: 4px;
+            background: #222;
+            position: absolute;
+            left: 0;
+            bottom: -7px;
+          }
+          &:after {
+            content: '';
+            width: 25px;
+            height: 4px;
+            background: #222;
+            position: absolute;
+            left: 0;
+            top: -7px;
+          }
+        }
+        
+        &.on span {
+          width: 0;
+          // height: 0;
+
+          &:before {
+            content: '';
+            width: 25px;
+            height: 4px;
+            background: #222;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transform: rotate(45deg);
+          }
+          &:after {
+            content: '';
+            width: 25px;
+            height: 4px;
+            background: #222;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: rotate(-45deg);
+          }
+        }
+      } //.ham
+    } //#mobile-nav
+
+    height: 50px;
+
+    h1 .logo {
+      width: 50px;
+    }
+  }
+}

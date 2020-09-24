@@ -1,0 +1,80 @@
+@import '@/assets/scss/abstracts/variables';
+
+.post-createform {
+  .field-item input[type='text'] {
+    width: 100%;
+    height: 50px;
+    padding: 0 1%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    line-height: 20px;
+    outline: none;
+    margin-bottom: 20px;
+
+    &:focus {
+      border: 1px solid #222;
+    }
+  }
+  .field-item textarea {
+    resize: none;
+    width: 100%;
+    height: 300px;
+    padding: 1%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    line-height: 20px;
+    outline: none;
+  }
+
+  .button-list {
+    float: right;
+
+    li {
+      float: left;
+
+      &:first-child {
+        margin-right: 10px;
+      }
+    } //li
+  }
+
+  .overLength {
+    color: $godaeriRed;
+  }
+}
+
+// 미디어쿼리
+@media screen and (max-width: 1440px) {
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 960px) {
+  .post-createform {
+    .field-item input[type='text'],
+    .field-item textarea {
+      width: 98%;
+    }
+
+    .field-item textarea {
+      height: 200px;
+    }
+
+    .button-list li:first-child {
+      margin-right: 0;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 640px) {
+  .post-createform {
+    .field-item input[type='text'],
+    .field-item textarea {
+      width: 96%;
+    }
+  }
+}

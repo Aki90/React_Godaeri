@@ -1,0 +1,22 @@
+.introduce {
+  .store-image {
+    width: 50%;
+    margin: 10px 0 20px 0;
+  }
+}
+
+// 미디어쿼리
+@media screen and (max-width: 768px) {
+  .introduce {
+    .store-image {
+      width: 60%;
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  .introduce {
+    .store-image {
+      width: 90%;
+    }
+  }
+}

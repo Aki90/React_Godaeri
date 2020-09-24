@@ -1,0 +1,11 @@
+.footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+// 미디어쿼리
+@media screen and (max-width: 640px) {
+  .footer .copyright {
+    font-size: 0.5rem;
+  }
+}

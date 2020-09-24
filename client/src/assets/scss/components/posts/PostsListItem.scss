@@ -1,0 +1,104 @@
+@import '@/assets/scss/abstracts/variables';
+
+.posts-list {
+  margin: 30px auto 0;
+  border-top: 1px solid #222;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead th {
+      padding: 20px 0;
+      font-weight: 400;
+      border-bottom: 1px solid #c8c8c8;
+    }
+
+    tbody tr:hover {
+      background-color: $godaeriRed;
+      border-collapse: collapse;
+      border-spacing: 0;
+      color: #ffe9e9;
+
+      a {
+        color: #fff;
+      }
+    }
+
+    tbody td {
+      padding: 20px 0;
+      font-size: 0.937rem;
+      letter-spacing: -0.25px;
+      border-bottom: 1px solid #c8c8c8;
+
+      & > a {
+        transition: none;
+        border-bottom: 1px solid #fff;
+      }
+    }
+
+    .number {
+      width: 10%;
+    }
+    .title {
+      width: 60%;
+    }
+    .writer {
+      width: 15%;
+    }
+    .date {
+      width: 15%;
+    }
+  }
+
+  .page {
+    margin: 20px 0 0;
+    .pagination {
+      display: inline-block;
+      margin: 0 auto;
+
+      li {
+        float: left;
+        font-size: 1rem;
+        margin: 0 5px;
+
+        a {
+          outline: none;
+        }
+      }
+      li.active > a {
+        color: $godaeriRed;
+      }
+    }
+  }
+
+  .write-button {
+    float: right;
+  }
+}
+
+// 미디어쿼리
+@media screen and (max-width: 960px) {
+  table {
+    .number {
+      display: none;
+    }
+    .title {
+      width: 80%;
+    }
+    .writer {
+      width: 20%;
+    }
+    .date {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  .posts-list table thead th {
+    padding: 15px 0;
+  }
+  .posts-list table tbody td {
+    padding: 13px 0;
+  }
+}

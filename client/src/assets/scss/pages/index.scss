@@ -1,0 +1,30 @@
+.main {
+  .banner {
+    margin-bottom: 50px;
+  }
+
+  .story {
+    margin: 30px 0;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .sns {
+    .sns-link {
+      margin: 10px;
+      .icon {
+        display: inline-block;
+        width: 40px;
+        margin: 0 10px;
+      }
+      .icon.facebook {
+        margin-top: 10px;
+      }
+      .icon.insta {
+        width: 37px;
+      }
+    }
+  }
+}
